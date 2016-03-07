@@ -1,0 +1,45 @@
+{
+  "users": [
+    {
+      "username": "Pesho",
+      "password": "Pesho",
+      "name": "Pesho",
+      "email": "Pesho@Pesho.com",
+      "license": null,
+      "admin": 0,
+      "id": 1
+    },
+    {
+      "username": "Ivan",
+      "password": "Ivan",
+      "name": "Ivan",
+      "email": "Ivan@Ivan.com",
+      "license": 1,
+      "admin": 1,
+      "id": 2
+    },
+    {
+      "username": "Mitko",
+      "password": "Mitko",
+      "name": "Mitko",
+      "email": "Mitko@Mitko.com",
+      "license": 2,
+      "admin": 0,
+      "id": 3
+    }
+  ],
+  "license": [
+    {
+      "age": "18",
+      "from": "Sofia",
+      "categories": "B",
+      "id": 1
+    },
+    {
+      "age": "21",
+      "from": "Pleven",
+      "categories": "B+E",
+      "id": 2
+    }
+  ]
+}
