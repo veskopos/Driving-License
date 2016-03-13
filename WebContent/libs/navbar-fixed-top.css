@@ -25,3 +25,15 @@ li:hover{
 	width:40%;
 	position: relative;
 }
+
+.jumbotron #pic{
+	position: relative;
+	overflow: hidden;
+}
+.jumbotron #pic img{
+	position:absolute;
+	right: 0;
+	top: 0;
+	width: 60% !important;
+	height: 90% !important;
+}
