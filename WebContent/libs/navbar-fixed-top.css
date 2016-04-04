@@ -13,6 +13,7 @@ li:hover{
 	height: 0;
 	overflow: hidden;
 	}
+	
 .google-maps iframe {
 	position: absolute;
 	top: 0;
@@ -21,19 +22,18 @@ li:hover{
 	height: 100% !important;
     }
     
-.jumbotron p{
-	width:40%;
-	position: relative;
+#audi{
+	height: 40vh;
+}    
+
+#lesson{
+	height: 20vh;
 }
 
-.jumbotron #pic{
-	position: relative;
-	overflow: hidden;
+.google-maps p {
+	width:40%;
 }
-.jumbotron #pic img{
-	position:absolute;
-	right: 0;
-	top: 0;
-	width: 60% !important;
-	height: 90% !important;
+
+.jumbotron .form-group{
+	width: 30% !important;
 }
