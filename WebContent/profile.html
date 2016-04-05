@@ -33,8 +33,8 @@
             <li><a href="contact.html">Contact</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
-            <li class= "active" id="login"><a href="login.html"></a></li>
-            <li id="register"><a href="register.html"><span class="sr-only">(current)</span></a></li>
+            <!--  <li class= "active" id="login"><a href="login.html"></a></li> -->
+            <li id="logout"><a href="login.html"><span class="sr-only">(current)</span></a></li>
           </ul>
         </div>
       </div>
@@ -45,28 +45,38 @@
       <div class="jumbotron">
         <h1></h1>
 		
-	<!--  	<div id="pic">
+<div class="container">
+  <h2>При нас може да кандидатствате за категория:</h2>
+  <p>A, B, C, D</p>
+  <form role="form">
+    <div class="radio">
+      <label><input id=option1 type="radio" name="optradio" value="A">A</label>
+    </div>
+    <div class="radio">
+      <label><input id=option2 type="radio" name="optradio" value="B">B</label>
+    </div>
+    <div class="radio">
+      <label><input id=option3 type="radio" name="optradio" value="C">C</label>
+    </div>
+    <div class="radio">
+      <label><input id=option4 type="radio" name="optradio" value="D">D</label>
+    </div>
+  </form>
+</div>
+
+<button class="btn btn-info btn-lg" type="submit">Давай!</button>
+
+		<div id="pic">
  			<p id="1"></p>
    			<p id="2"></p>
 		</div>
-	-->
-
-		<div class="form-group">
-			<label for="usr">Username:</label>
-			<input type="text" class="form-control" id="usr">
-		</div>
-		<div class="form-group">
-  			<label for="pwd">Password:</label>
-  			<input type="password" class="form-control" id="pwd">
-		</div>
-		<button class="btn btn-info btn-lg" type="submit">Log in</button>	
-					
+		
       </div>
     </div> 
     <script type="text/javascript" src="libs/jquery-2.1.4.js"></script>
     <script type="text/javascript" src="libs/lodash-3.10.1.js"></script>
     <script type="text/javascript" src="libs/bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="scripts/login1.js"></script>
+    <script type="text/javascript" src="scripts/profile.js"></script>
     
   </body>
 </html>

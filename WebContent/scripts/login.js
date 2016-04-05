@@ -11,15 +11,11 @@ $(document).ready(function() {
 	$(".btn-info").click(function() {
 		var person = {
 			username: $("input#usr").val(),
-			password: $("input#pwd").val(),
-			name: $("input#name").val(),
-			email: $("input#email").val(),
-			license: null,
-			admin: 0
+			password: $("input#pwd").val()
 		};
 		
 		$.ajax(ENDPOINT, {
-			method: "POST",
+			method: "GET",
 			dataType: "json",
 			data: JSON.stringify(person),
 			contentType: "application/json; charset=utf-8",
@@ -34,5 +30,5 @@ $(document).ready(function() {
 			}
 		});
 	});
-	
+
 });
