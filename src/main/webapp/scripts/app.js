@@ -9,7 +9,24 @@ $(document).ready(function() {
 	var img = $("<img />").attr("src", "libs/car-captain-driving-courses.jpg").attr("class", "img-responsive").attr("id", "lesson").attr("align", "right");
 	$(".jumbotron #1").prepend(img);
 	
-	$("#login a").text("Login");
-	$("#register a").text("Register");
+	if($.cookie("session")){
+		
+		$("#login a").text($.cookie('session'));
+		$("#login a").attr('href', 'http://localhost:8080/Driving-License/profile.html');
+		
+		$("#register a").text("Logout");
+		$("#register a").click(function() {
+			$.removeCookie('session', { path: '/' });
+			$.removeCookie('id', { path: '/' });
+			location.reload();
+		});
+		
+	}else{
+		$("#login a").text("Login");
+		$("#login a").attr('href', 'http://localhost:8080/Driving-License/login.html');
+		$("#register a").text("Register");
+		$("#register a").attr('href', 'http://localhost:8080/Driving-License/register.html');
+
+	};
 
 });

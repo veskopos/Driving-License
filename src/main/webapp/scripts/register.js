@@ -27,9 +27,7 @@ $(document).ready(function() {
 				listError("Username or password incorrect!");
 			},
 			success: function() {
-				var now = new Date();
-				now.setTime(now.getTime() + 3600 * 1000);
-				document.cookie = "session=" + person.username + "; expires=" + now.toGMTString() + ";";
+				$.cookie('session', person.username, {path: '/', expires: 3});
 				window.location = "http://localhost:8080/Driving-License/profile.html";
 			}
 		});

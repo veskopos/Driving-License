@@ -24,16 +24,17 @@ $(document).ready(function() {
 				username: $("input#usr").val(),
 				password: $("input#pwd").val()
 			},
-//			contentType: "application/json; charset=utf-8",
+			contentType: "application/json; charset=utf-8",
 			error: function() {
 				alert("Password do not match!");
 			},
 			success: function(response) {
-				console.log(response[0]);
+				//console.log(response[0]);
 				if (typeof(response[0]) === 'undefined') {
 					console.log('No user');
 				} else {
-					$.cookie('session', person.username, {path: '/', expires: 100});
+					$.cookie('session', person.username, {path: '/', expires: 3});
+					$.cookie('id', response[0].id, {path: '/', expires: 3});
 					window.location = "http://localhost:8080/Driving-License/profile.html";
 				}
 				

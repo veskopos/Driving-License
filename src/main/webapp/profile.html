@@ -29,12 +29,12 @@
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
             <li><a href="index.html">Home</a></li>
-            <li><a href="#">About</a></li>
+            <li><a href="about.html">About</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
              <li class= "active" id="username"><a href="#"></a></li>
-            <li id="logout"><a href="login.html"><span class="sr-only">(current)</span></a></li>
+            <li id="logout"><a href="#"><span class="sr-only">(current)</span></a></li>
           </ul>
         </div>
       </div>
@@ -65,7 +65,33 @@
   
 </div>
 
-<button class="btn btn-info btn-lg" type="submit">Давай!</button>
+
+<!-- Trigger the modal with a button -->
+<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Давай!</button>
+
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Успешно кандидатствахте!</h4>
+      </div>
+      <div class="modal-body">
+        <p>Успешно кандидатствахте за:</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<!--  <button class="btn btn-info btn-lg" type="submit">Давай!</button> -->
 
 		<div id="pic">
  			<p id="1"></p>
