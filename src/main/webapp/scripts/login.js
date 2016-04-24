@@ -3,7 +3,6 @@ $(document).ready(function() {
 	//$.cookie('session', 'asdasd', {path: '/', expires: 100});
 	//console.log($.cookie('session'));
 	
-	
 	$(".jumbotron h1").text("Driving License");
 
 	$("#login a").text("Login");
@@ -11,12 +10,14 @@ $(document).ready(function() {
 
 	var ENDPOINT = "http://localhost:3000/users";
 	
+	$('[data-toggle="popover"]').popover();
+	
 	$(".btn-info").click(function() {
 		var person = {
 			username: $("input#usr").val(),
 			password: $("input#pwd").val()
 		};
-		
+
 		$.ajax(ENDPOINT, {
 			method: "GET",
 			dataType: "json",
@@ -32,14 +33,13 @@ $(document).ready(function() {
 				//console.log(response[0]);
 				if (typeof(response[0]) === 'undefined') {
 					console.log('No user');
+					$('[data-toggle="popover"]').popover();
 				} else {
 					$.cookie('session', person.username, {path: '/', expires: 3});
 					$.cookie('id', response[0].id, {path: '/', expires: 3});
 					window.location = "http://localhost:8080/Driving-License/profile.html";
 				}
-				
 			}
 		});
 	});
-
 });

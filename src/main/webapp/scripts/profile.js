@@ -22,33 +22,33 @@ $(document).ready(function() {
 		
 		var person = {
 				id: $.cookie('id'),
-			license: $(":checked").val(),
+			requestedLicense: $(":checked").val(),
 		};
  
 		$.ajax(ENDPOINT + "/" + $.cookie('id'), {
 				method: "GET",
 				dataType: "json"
 			}).then(function(response1) {
-		var allData = {
-				license: person.license + " " + response1.license
-		};
+		/*var allData = {
+				license: person.requestedLicense + " " + response1.license
+		};*/
 		//console.log(allData);
 		//alert(person.license);
-		if (typeof(person.license) === 'undefined') {
+		if (typeof(person.requestedLicense) === 'undefined') {
 			$(".modal-title").text("Грешка!");
 			$(".modal-body p").text("Изберете категория!");
 		}else{
 		$.ajax(ENDPOINT + "/" + $.cookie('id'), {
 			method: "PATCH",
 			dataType: "json",
-			data: JSON.stringify(allData),
+			data: JSON.stringify(person),
 			contentType: "application/json; charset=utf-8",
 			success: function() {
 				//window.location = "http://localhost:8080/Driving-License/profile.html";
 			}
 		});
 		$(".modal-title").text("Успешно кандидатствахте за:");
-		$(".modal-body p").text(allData.license);
+		$(".modal-body p").text(person.requestedLicense);
 		};
 			});
 		
