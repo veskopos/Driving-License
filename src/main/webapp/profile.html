@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Driving License">
+    <meta name="author" content="Veselin Dechev">
+    <link rel="icon" href="libs/favicon.ico">
+
+    <title>Driving License</title>
+
+    <link href="libs/bootstrap-3.3.6-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="libs/navbar-fixed-top.css" rel="stylesheet">
+
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">Driving License</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+             <li class= "active" id="username"><a href="#"></a></li>
+            <li id="logout"><a href="login.html"><span class="sr-only">(current)</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>   
+
+    <div class="container">
+
+      <div class="jumbotron">
+        <h1></h1>
+		
+<div class="container">
+  <h2>При нас може да кандидатствате за категория:</h2>
+  <p>A, B, C, D</p>
+  <form role="form">
+    <div class="radio">
+      <label><input id=option1 type="radio" name="optradio" value="A">A</label>
+    </div>
+    <div class="radio">
+      <label><input id=option2 type="radio" name="optradio" value="B">B</label>
+    </div>
+    <div class="radio">
+      <label><input id=option3 type="radio" name="optradio" value="C">C</label>
+    </div>
+    <div class="radio">
+      <label><input id=option4 type="radio" name="optradio" value="D">D</label>
+    </div>
+  </form>  
+  
+</div>
+
+<button class="btn btn-info btn-lg" type="submit">Давай!</button>
+
+		<div id="pic">
+ 			<p id="1"></p>
+   			<p id="2"></p>
+		</div>
+		
+      </div>
+    </div> 
+    
+    <script type="text/javascript" src="libs/jquery-2.1.4.js"></script>
+    <script type="text/javascript" src="libs/jquery.cookie.js"></script>
+    <script type="text/javascript" src="libs/lodash-3.10.1.js"></script>
+    <script type="text/javascript" src="libs/bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="scripts/profile.js"></script>
+    
+  </body>
+</html>

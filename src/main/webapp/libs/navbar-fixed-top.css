@@ -1,0 +1,39 @@
+body {
+  min-height: 800px;
+  padding-top: 70px;
+}
+
+li:hover{
+	background-color: #9CE7F9;
+}
+
+.google-maps {
+	position: relative;
+	padding-bottom: 35%; // This is the aspect ratio
+	height: 0;
+	overflow: hidden;
+	}
+	
+.google-maps iframe {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 60% !important;
+	height: 100% !important;
+    }
+    
+#audi{
+	height: 40vh;
+}    
+
+#lesson{
+	height: 20vh;
+}
+
+.google-maps p {
+	width:40%;
+}
+
+.jumbotron .form-group{
+	width: 30% !important;
+}
