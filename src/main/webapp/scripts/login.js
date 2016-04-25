@@ -15,7 +15,7 @@ $(document).ready(function() {
 	$(".btn-info").click(function() {
 		var person = {
 			username: $("input#usr").val(),
-			password: $("input#pwd").val()
+			password: CryptoJS.MD5($("input#pwd").val()).toString()
 		};
 
 		$.ajax(ENDPOINT, {
@@ -23,7 +23,7 @@ $(document).ready(function() {
 			dataType: "json",
 			data: /*JSON.stringify(person)*/{
 				username: $("input#usr").val(),
-				password: $("input#pwd").val()
+				password: CryptoJS.MD5($("input#pwd").val()).toString()
 			},
 			contentType: "application/json; charset=utf-8",
 			error: function() {

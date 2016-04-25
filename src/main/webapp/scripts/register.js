@@ -13,7 +13,7 @@ $(document).ready(function() {
 	$(".btn-info").click(function() {
 		var person = {
 			username: $("input#usr").val(),
-			password: $("input#pwd").val(),
+			password: CryptoJS.MD5($("input#pwd").val()).toString(),
 			name: $("input#name").val(),
 			email: $("input#email").val(),
 			license: null,

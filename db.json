@@ -2,27 +2,27 @@
   "users": [
     {
       "username": "Pesho",
-      "password": "Pesho",
+      "password": "d9a5f3725f900432926e465a273b7cb8",
       "name": "Pesho",
       "email": "Pesho@Pesho.com",
       "license": null,
-      "requestedLicense": "B",
+      "requestedLicense": null,
       "admin": 0,
       "id": 1
     },
     {
       "username": "Mitko",
-      "password": "Mitko",
+      "password": "d4d4eb35d4b34ed1d9bc8f6e7a324a28",
       "name": "Mitko",
       "email": "Mitko@Mitko.com",
       "license": null,
-      "requestedLicense": "C",
+      "requestedLicense": "D",
       "admin": 0,
       "id": 2
     },
     {
       "username": "Ivan",
-      "password": "Ivan",
+      "password": "036e3491ba499df64611c82b6bcdd37d",
       "name": "Ivan",
       "email": "Ivan@Ivan.com",
       "license": null,
